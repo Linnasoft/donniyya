@@ -114,9 +114,7 @@
             </div><!-- end side-menu-wrap -->
         </div>
     </header>
-@endif
-
-@if($navbar_target == '2')
+@elseif($navbar_target == '2')
     <header class="header-area">
         <div class="header-menu-wrapper">
             <div class="container">
@@ -166,6 +164,25 @@
                     <span class="or-text">or</span>
                     <a href="sign-up.html">Sign up</a>
                     <a href="employer-dashboard-post-job.html" class="theme-btn">Post a Job</a>
+                </div>
+            </div>
+        </div>
+    </header>
+@elseif($navbar_target == '3')
+    <header class="header-area header-area-2">
+        <div class="header-menu-wrapper padding-right-40px padding-left-40px">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="menu-full-width">
+                            <div class="logo">
+                                <a href="/">
+                                    <img alt="logo" src="{{asset('assets/img/logo/logo_wh_header.png')}}" width="200px" class="">
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

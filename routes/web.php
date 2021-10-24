@@ -27,7 +27,7 @@ Route::get('/recherche/{category}/{keyword}/{location}', function () {
     return view('member.pages.formation.listing')->with($data);
 });
 
-Route::get('/{category}/{formation_token}', function () {
+Route::get('/formation/{category}/{formation_token}', function () {
 
     $title = 'Créer un logiciel de gestion avec Excel';
 
@@ -39,6 +39,18 @@ Route::get('/{category}/{formation_token}', function () {
     ];
 
     return view('member.pages.formation.single')->with($data);
+});
+
+Route::get('/formateur/decouvrir', function () {
+
+    $data = [
+        'category_name' => '',
+        'page_name' => 'formation',
+        'page_title' => __('formation.be_a_teacher_page_title'),
+        'navbar_target' => '3',
+    ];
+
+    return view('member.pages.formation.be_a_teacher')->with($data);
 });
 
 Route::get('/creer-un-compte', function () {

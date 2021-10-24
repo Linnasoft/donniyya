@@ -330,7 +330,7 @@
                         <div class="job-content">
                             <div class="row"> 
                                 <div class="col-md-6 col-lg-4 responsive-column">
-                                    <a href="/micosoft-excel/382991602">
+                                    <a href="/formation/microsoft-excel/382991602">
                                         <div class="job-card">
                                             <div class="job-card-content">
                                                 <div class="card-head d-flex align-items-center">
@@ -371,17 +371,17 @@
                                     </a>
                                 </div>
                                 <div class="col-md-6 col-lg-4 responsive-column">
-                                    <a href="/micosoft-excel/382991602">
+                                    <a href="/formation/microsoft-excel/382991602">
                                         <div class="job-card">
                                             <div class="job-card-content">
                                                 <div class="card-head d-flex align-items-center">
                                                     <div class="company-avatar mr-3">
                                                         <span class="d-block">
-                                                        <img alt="logo" src="{{asset('assets/img/logo/essay.png')}}" class="">
+                                                        <img alt="logo" src="{{asset('assets/img/logo/start-up.png')}}" class="">
                                                         </span>
                                                     </div>
                                                     <div class="company-title-box">
-                                                        <h4 class="card-title mb-1"><span>Business - Plan d'affaire</span></h4>
+                                                        <h4 class="card-title mb-1"><span>Business - Entrepreneuriat</span></h4>
                                                         <p class="card-sub">
                                                             <span class="badge badge-warning">Formation non certifiante</span>
                                                         </p>
@@ -412,7 +412,7 @@
                                     </a>
                                 </div>
                                 <div class="col-md-6 col-lg-4 responsive-column">
-                                    <a href="/micosoft-excel/382991602">
+                                    <a href="/formation/microsoft-excel/382991602">
                                         <div class="job-card">
                                             <div class="job-card-content">
                                                 <div class="card-head d-flex align-items-center">
@@ -446,6 +446,129 @@
                                                     </span>
                                                     <span class="color-text-2 font-size-13"> 
                                                         35 000 fcfa
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-4 responsive-column">
+                                    <a href="/formation/microsoft-excel/382991602">
+                                        <div class="job-card">
+                                            <div class="job-card-content">
+                                                <div class="card-head d-flex align-items-center">
+                                                    <div class="company-avatar mr-3">
+                                                        <span class="d-block">
+                                                        <img alt="logo" src="{{asset('assets/img/logo/idea.png')}}" class="">
+                                                        </span>
+                                                    </div>
+                                                    <div class="company-title-box">
+                                                        <h4 class="card-title mb-1"><span>Design - Graphisme</span></h4>
+                                                        <p class="card-sub">
+                                                            <span class="badge badge-warning">Formation non certifiante</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-content mt-4 margin-bottom-30px">
+                                                    <h4 class="card-title mb-2">
+                                                        <span>Créer des visuels avec Adobe Photoshop</span>
+                                                    </h4>
+                                                    <p class="card-sub">
+                                                        Venez apprendre en quelques jours à créer vos propres outils de gestion d'ent ...
+                                                    </p>
+                                                </div>
+                                                <div class="section-block-2"></div>
+                                                <div class="card-foot d-flex align-items-center justify-content-between mt-4">
+                                                    <span class="color-text-2 font-size-13">
+                                                    <i class="fas fa-laptop"></i> En ligne
+                                                    </span>
+                                                    <span class="color-text-2 font-size-13">
+                                                        <i class="fa fa-users"></i> 22 places disponibles
+                                                    </span>
+                                                    <span class="color-text-2 font-size-13"> 
+                                                        45 000 fcfa
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-4 responsive-column">
+                                    <a href="/formation/microsoft-excel/382991602">
+                                        <div class="job-card">
+                                            <div class="job-card-content">
+                                                <div class="card-head d-flex align-items-center">
+                                                    <div class="company-avatar mr-3">
+                                                        <span class="d-block">
+                                                        <img alt="logo" src="{{asset('assets/img/logo/ecommerce.png')}}" class="">
+                                                        </span>
+                                                    </div>
+                                                    <div class="company-title-box">
+                                                        <h4 class="card-title mb-1"><span>Digital - E-commerce</span></h4>
+                                                        <p class="card-sub">
+                                                            <span class="badge badge-primary">Formation certifiante</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-content mt-4 margin-bottom-30px">
+                                                    <h4 class="card-title mb-2">
+                                                        <span>Lancer votre business sur internet</span>
+                                                    </h4>
+                                                    <p class="card-sub">
+                                                        Venez apprendre en quelques jours à créer vos propres outils de gestion d'ent ...
+                                                    </p>
+                                                </div>
+                                                <div class="section-block-2"></div>
+                                                <div class="card-foot d-flex align-items-center justify-content-between mt-4">
+                                                    <span class="color-text-2 font-size-13">
+                                                    <i class="fas fa-chair"></i> Physique
+                                                    </span>
+                                                    <span class="color-text-2 font-size-13">
+                                                        <i class="fa fa-users"></i> 13 places disponibles
+                                                    </span>
+                                                    <span class="color-text-2 font-size-13"> 
+                                                        65 000 fcfa
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-4 responsive-column">
+                                    <a href="/formation/microsoft-excel/382991602">
+                                        <div class="job-card">
+                                            <div class="job-card-content">
+                                                <div class="card-head d-flex align-items-center">
+                                                    <div class="company-avatar mr-3">
+                                                        <span class="d-block">
+                                                        <img alt="logo" src="{{asset('assets/img/logo/requirements.png')}}" class="">
+                                                        </span>
+                                                    </div>
+                                                    <div class="company-title-box">
+                                                        <h4 class="card-title mb-1"><span>Business - Soft Skills</span></h4>
+                                                        <p class="card-sub">
+                                                            <span class="badge badge-warning">Formation non certifiante</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-content mt-4 margin-bottom-30px">
+                                                    <h4 class="card-title mb-2">
+                                                        <span>Les meilleures techniques de vente</span>
+                                                    </h4>
+                                                    <p class="card-sub">
+                                                        Venez apprendre en quelques jours à créer vos propres outils de gestion d'ent ...
+                                                    </p>
+                                                </div>
+                                                <div class="section-block-2"></div>
+                                                <div class="card-foot d-flex align-items-center justify-content-between mt-4">
+                                                    <span class="color-text-2 font-size-13">
+                                                    <i class="fas fa-chair"></i> Physique
+                                                    </span>
+                                                    <span class="color-text-2 font-size-13">
+                                                        <i class="fa fa-users"></i> 7 places disponibles
+                                                    </span>
+                                                    <span class="color-text-2 font-size-13"> 
+                                                        15 000 fcfa
                                                     </span>
                                                 </div>
                                             </div>
