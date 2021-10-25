@@ -53,6 +53,18 @@ Route::get('/formateur/decouvrir', function () {
     return view('member.pages.formation.be_a_teacher')->with($data);
 });
 
+Route::get('/dashboard', function () {
+
+    $data = [
+        'category_name' => '',
+        'page_name' => 'dashboard',
+        'page_title' => __('dashboard.index_page_title'),
+        'navbar_target' => '',
+    ];
+
+    return view('member.pages.dashboard.index')->with($data);
+});
+
 Route::get('/creer-un-compte', function () {
 
     $data = [

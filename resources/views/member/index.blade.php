@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <section class="hero-wrapper hero-wrapper-4">
+    <section class="hero-wrapper hero-wrapper-4" style="background-image:url('{{ asset('assets/img/bg/index-1.jpg') }}')">
         <div class="hero-overlay"></div>
         <div class="container">
             <div class="row">
@@ -11,7 +11,7 @@
                         <div class="hero-heading text-center">
                             <div class="section-heading">
                                 <h2 class="sec__title">{{ __('index.find_formation_text') }}</h2>
-                                <p class="sec__desc font-size-20 font-weight-medium text-white-50 cd-headline zoom">
+                                <p class="sec__desc font-size-20 font-weight-medium cd-headline zoom">
                                     {{ __('index.find_formation_subtext_1') }}
                                     <span class="cd-words-wrapper">
                                         <b class="is-visible">{{ __('index.find_formation_subtext_2') }}</b>

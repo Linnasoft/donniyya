@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <section class="hero-wrapper" style="padding-top:80px">
+    <section class="hero-wrapper hero-wrapper-1" style="background-image:url('{{ asset('assets/img/bg/index-2.jpg') }}')">
         <div class="hero-overlay"></div>
         <div class="container">
             <div class="row">

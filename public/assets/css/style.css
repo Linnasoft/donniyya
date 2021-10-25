@@ -1818,7 +1818,7 @@ body
 
 .section-heading .sec__desc {
 	font-size: 17px;
-	color: #797f87;
+	color: #e3eef5;
 	line-height: 30px;
 	font-weight: 400
 }
@@ -2252,12 +2252,12 @@ body
 	content: "\f107";
 	top: 15px;
 	right: 16px;
-	font-family: "Line Awesome Free";
+	font-family: "Font Awesome 5 Free";
 	font-size: 16px;
 	color: #797f87;
 	pointer-events: none;
 	display: inline-block;
-	font-weight: 900
+	font-weight: 900 
 }
 
 .select-option,
@@ -5099,7 +5099,7 @@ body
 }
 
 @media (max-width:1199px) {
-	.logo-right-content .author-access-list {
+	.logo-right-content .author-access-list{
 		display: none
 	}
 }
@@ -5125,6 +5125,7 @@ body
 .logo-right-content .author-access-list li a:hover {
 	color: #0076A8
 }
+
 
 .logo-right-content .author-access-list li a.theme-btn {
 	color: #fff
@@ -5284,7 +5285,7 @@ body
 	left: 0;
 	width: 320px;
 	height: 100%;
-	background-color: #2c2c51;
+	background-color: #003B5B;
 	overflow-x: hidden;
 	z-index: 999;
 	-webkit-transition: all .4s cubic-bezier(.7, 0, .2, 1);
@@ -5302,9 +5303,17 @@ body
 	transform: translateX(-100%)
 }
 
-.dashboard-nav-container .side-menu-wrap,
-.side-nav-container .side-menu-wrap {
+.side-nav-container .humburger-menu .side-nav-logo{
+	width: 150px;
+	margin: 20px 0 0 15px;
+}
+
+.dashboard-nav-container .side-menu-wrap {
 	margin-top: 100px
+}
+
+.side-nav-container .side-menu-wrap {
+	margin-top: 25px
 }
 
 .dashboard-nav-container .side-menu-ul>li,
@@ -5634,10 +5643,6 @@ body
 
 .header-area-2 .logo-right-content .author-access-list li a {
 	color: #fff
-}
-
-.header-area-2 .logo-right-content .author-access-list li a:hover {
-	color: #0076A8
 }
 
 .header-area-2 .logo-right-content .author-access-list li a.theme-btn:hover {
@@ -6046,13 +6051,14 @@ body
 }
 
 .hero-wrapper {
-	background-image: url('');
 	position: relative;
 	width: 100%;
 	z-index: 1;
 	color: #fff;
 	padding-top: 246px;
-	padding-bottom: 230px
+	padding-bottom: 230px;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 @media only screen and (min-width:768px) and (max-width:991px) {
@@ -6298,6 +6304,29 @@ body
 	}
 }
 
+/*.hero-wrapper-1 {
+	background-image: url(../images/hero-bg2.jpg);
+	padding-bottom: 190px
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+	.hero-wrapper-1 {
+		padding-bottom: 160px
+	}
+}
+
+@media only screen and (min-width:480px) and (max-width:767px) {
+	.hero-wrapper-1 {
+		padding-bottom: 160px
+	}
+}
+
+@media (max-width:575px) {
+	.hero-wrapper-1 {
+		padding-bottom: 140px
+	}
+}*/
+
 .hero-wrapper-2 .hero-form-wrap {
 	margin-top: 40px;
 	bottom: auto;
@@ -6438,8 +6467,10 @@ body
 }
 
 .hero-wrapper-4 {
-	background-image: url('');
-	padding-bottom: 200px
+	background-image: url("{{ public_path('assets/img/bg/bg_top.png') }}");
+	padding-bottom: 200px;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .team-area .carousel-item-wrap .owl-stage-outer {

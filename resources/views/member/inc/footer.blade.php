@@ -7,7 +7,7 @@
                         <div class="logo">
                             <a href="index.html" class="foot-logo"><img src="{{asset('assets/img/logo/logo_og_footer.png')}}" width="200px" alt="logo"></a>
                             <p class="footer__desc line-height-30 mt-3">
-                                Vous souhaitez vous former rapidement dans un domaine précis ? Nous recensons pour vous toutes les offres de formation adaptées à vos attentes, gratuitement <i class="text-success fa fa-smile"></i>
+                                Nous recensons pour vous toutes les offres de formation adaptées à vos attentes, gratuitement <i class="text-success fa fa-smile"></i>
                             </p>
                             <h4 class="footer__title mt-4">Suivez nous</h4>
                             <ul class="social-profile">
