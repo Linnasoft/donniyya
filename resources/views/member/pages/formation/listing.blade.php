@@ -8,6 +8,19 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="hero-content-wrapper position-relative">
+                    <div class="hero-heading text-center">
+                            <div class="section-heading">
+                                <p class="sec__desc font-size-50 font-weight-medium cd-headline zoom">
+                                    <span class="cd-words-wrapper">
+                                        <b class="is-visible">Apprendre</b>
+                                        <b>Partager</b>
+                                        <b>Booster</b>
+                                        <b>Rencontrer</b>
+                                        <b>Evoluer</b>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
                         <div class="hero-form-wrap position-absolute shadow">
                             <div class="main-search-input">
                                 <div class="main-search-input-item">
@@ -15,7 +28,7 @@
                                         <form action="#">
                                             <div class="form-group mb-0">
                                                 <span class="fa fa-search form-icon"></span>
-                                                <input class="form-control" type="text" placeholder="{{ __('index.search_keywords_placeholder') }}">
+                                                <input class="form-control" type="text" placeholder="{{ __('index.search_keywords_placeholder') }}" value="">
                                             </div>
                                         </form>
                                     </div>

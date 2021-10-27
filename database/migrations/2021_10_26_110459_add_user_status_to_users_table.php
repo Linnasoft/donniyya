@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSocialMediaTable extends Migration
+class AddUserStatusToUsersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CreateSocialMediaTable extends Migration
      */
     public function up()
     {
-        Schema::create('social_media', function (Blueprint $table) {
-            $table->id();
-            $table->string('media_name');
-            $table->string('media_icon');
-            $table->timestamps();
+        Schema::table('users', function (Blueprint $table) {
+            $table->string('user_status');
         });
     }
 
@@ -28,6 +25,8 @@ class CreateSocialMediaTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('social_media');
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropColumn('user_status');
+        });
     }
 }

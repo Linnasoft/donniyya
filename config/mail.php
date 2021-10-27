@@ -36,13 +36,22 @@ return [
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
-            'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
-            'port' => env('MAIL_PORT', 587),
-            'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+            'host' => env('MAIL_HOST',),
+            'port' => env('MAIL_PORT'),
+            'encryption' => env('MAIL_ENCRYPTION'),
             'username' => env('MAIL_USERNAME'),
             'password' => env('MAIL_PASSWORD'),
             'timeout' => null,
             'auth_mode' => null,
+
+            /*'transport' => 'smtp',
+            'host' => env('MAIL_HOST', 'mail49.lwspanel.com'),
+            'port' => env('MAIL_PORT', 465),
+            'encryption' => env('MAIL_ENCRYPTION', 'ssl'),
+            'username' => env('MAIL_USERNAME', 'post@app-linnasoft.com'),
+            'password' => env('MAIL_PASSWORD', 'eP5_7ACHpu'),
+            'timeout' => null,
+            'auth_mode' => null,*/
         ],
 
         'ses' => [
@@ -91,9 +100,20 @@ return [
     |
     */
 
+    /*
+    'stream' => [
+        'ssl' => [
+            'allow_self_signed' => true,
+            'verify_peer' => false,
+            'verify_peer_name' => false,
+        ],
+    ],
+    */
+
+
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_USERNAME'),
+        'name' => config('app.name'),
     ],
 
     /*

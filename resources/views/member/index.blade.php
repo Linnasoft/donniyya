@@ -302,7 +302,7 @@
                                     </select>
                                 </div>
                                 <div class="main-search-input-btn">
-                                    <a href="#" class="button theme-btn line-height-50">
+                                    <a href="/recherche/keyword/category/location" class="button theme-btn line-height-50">
                                         {{ __('index.search_formation_btn') }}
                                     </a>
                                 </div>
@@ -335,8 +335,8 @@
                                 <span class="font-weight-medium">(22 open positions)</span>
                             </div>
                         </a>
-                    </div><!-- end category-item -->
-                </div><!-- end col-lg-3 -->
+                    </div>
+                </div>
                 <div class="col-lg-3 responsive-column">
                     <div class="category-item">
                         <a href="job-grid-view.html" class="cat-fig-box d-block p-4">
@@ -349,7 +349,7 @@
                             </div>
                         </a>
                     </div><!-- end category-item -->
-                </div><!-- end col-lg-3 -->
+                </div>
                 <div class="col-lg-3 responsive-column">
                     <div class="category-item">
                         <a href="job-grid-view.html" class="cat-fig-box d-block p-4">
@@ -361,8 +361,8 @@
                                 <span class="font-weight-medium">(21 open positions)</span>
                             </div>
                         </a>
-                    </div><!-- end category-item -->
-                </div><!-- end col-lg-3 -->
+                    </div>
+                </div>
                 <div class="col-lg-3 responsive-column">
                     <div class="category-item">
                         <a href="job-grid-view.html" class="cat-fig-box d-block p-4">
@@ -375,7 +375,7 @@
                             </div>
                         </a>
                     </div><!-- end category-item -->
-                </div><!-- end col-lg-3 -->
+                </div>
             </div>
         </div>
     </section>
@@ -389,7 +389,7 @@
                             Avoir des connaissances c'est bien ! <br>
                             Les partager avec les autres, c'est mieux !
                         </h2>
-                        <p class="sec__desc">
+                        <p class="sec__desc__">
                             Gagnez un revenu complémentaire en partageant vos connaissances.
                         </p>
                     </div>

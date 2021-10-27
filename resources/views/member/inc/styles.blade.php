@@ -9,6 +9,9 @@
 <link rel="stylesheet" href="{{ asset('assets/css/daterangepicker.css') }}" />
 <link rel="stylesheet" href="{{ asset('assets/css/jquery-ui.css') }}" />
 <link rel="stylesheet" href="{{ asset('assets/css/chosen.min.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/css/theme-checkbox-radio.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/css/avatar.css') }}" />
+<link href="{{asset('plugins/notification/snackbar/snackbar.min.css')}}" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
 
 <link rel="stylesheet" href="{{asset('plugins/font-icons/fontawesome/css/fontawesome.css')}}">

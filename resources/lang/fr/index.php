@@ -12,6 +12,6 @@ return [
     'search_keywords_placeholder' => 'Que recherchez-vous ?',
     'search_categories_placeholder' => 'Catégories',
     'search_localisation_placeholder' => 'Localisation',
-    'page_title' => 'Apprendre et Transmettre avec passion',
+    'page_title' => 'Site d\'annonces de formation',
 
 ];

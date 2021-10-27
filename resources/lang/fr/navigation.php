@@ -6,4 +6,7 @@ return [
     'login_text' => 'Se connecter',
     'signup_text' => 'Créer un compte',
 
+
+    'notifications_page_title' => 'Notifications',
+
 ];

@@ -1,4 +1,4 @@
-@if($page_name != 'login' && $page_name != 'register' && $page_name != 'password')
+@if($footer_target == '1')
     <section class="footer-area padding-top-90px padding-bottom-30px">
         <div class="container">
             <div class="row">
