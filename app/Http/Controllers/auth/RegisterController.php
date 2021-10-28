@@ -39,7 +39,7 @@ class RegisterController extends Controller
             'footer_target' => ''
         ];
     
-        return view('auth.register.register')->with($data);
+        return view('site.auth.register.register')->with($data);
     }
 
     public function register_basic_member(Request $request)
@@ -68,7 +68,7 @@ class RegisterController extends Controller
                             new UserRegistered($request->firstname)
                         );*/
 
-                        return view('auth.register.registration_done')->with('email', $request->email);
+                        return view('site.auth.register.registration_done')->with('email', $request->email);
                     }
                     else
                     {
@@ -94,6 +94,6 @@ class RegisterController extends Controller
 
     public function index_teacher()
     {
-        return view('auth.register_teacher');
+        return view('site.auth.register.register_teacher');
     }
 }

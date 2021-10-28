@@ -40,4 +40,10 @@ return [
     'terms' => 'En vous inscrivant, vous acceptez <a href="/" class="color-text">nos conditions d\'utilisation</a>.',
     'remember_me_text' => 'Se souvenir de moi',
 
+
+    'login_confirmation_text' => 'Content de vous revoir sur <b>'.config('app.name').'</b>, ',
+    'logout_confirmation_text' => 'Vous êtes déconnecté(e) maintenant !',
+    'login_error_no_credential' => 'Renseignez l\'email et le mot de passe !',
+    'login_error_wrong_credentials' => 'Vos identifiants sont incorrects !',
+
 ];

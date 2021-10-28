@@ -32,7 +32,7 @@ class PasswordResetController extends Controller
             'footer_target' => ''
         ];
 
-        return view('auth.password_reset.reset_password')->with($data);
+        return view('site.auth.password_reset.reset_password')->with($data);
     }
 
     public function send_email(Request $request)
@@ -45,7 +45,7 @@ class PasswordResetController extends Controller
                 if($user)
                 {
                     $status = Password::sendResetLink($request->only('email'));
-                    return view('auth.password_reset.reset_link_sent')->with('email', $request->email);
+                    return view('site.auth.password_reset.reset_link_sent')->with('email', $request->email);
                 }
                 else
                 {
@@ -65,7 +65,7 @@ class PasswordResetController extends Controller
 
     public function index_new_password($token, $email)
     {
-        return view('auth.password_reset.new_password', ['token' => $token, 'email' => $email]);
+        return view('site.auth.password_reset.new_password', ['token' => $token, 'email' => $email]);
     }
 
     public function new_password(Request $request)
