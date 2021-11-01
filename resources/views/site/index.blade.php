@@ -19,6 +19,9 @@
                                         <b>{{ __('index.find_formation_subtext_4') }}</b>
                                     </span>
                                     {{ __('index.find_formation_subtext_5') }}
+                                    <span class="cd-words-wrapper">
+                                        <b class="is-visible">{{ __('index.find_formation_subtext_6') }}</b>
+                                    </span>
                                 </p>
                             </div>
                         </div>
@@ -314,12 +317,12 @@
         </div>
     </section>
 
-    <section class="cat-area padding-top-100px padding-bottom-110px text-center">
+    <section class="cat-area padding-top-100px padding-bottom-80px text-center">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-heading">
-                        <h2 class="sec__title">Top catégories</h2>
+                        <h2 class="sec__title">{{ __('index.top_categories_text') }}</h2>
                     </div>
                 </div>
             </div>
@@ -332,7 +335,6 @@
                             </div>
                             <div class="cat-content">
                                 <h4 class="cat__title mb-2">Design & Multimedia</h4>
-                                <span class="font-weight-medium">(22 open positions)</span>
                             </div>
                         </a>
                     </div>
@@ -345,10 +347,9 @@
                             </div>
                             <div class="cat-content">
                                 <h4 class="cat__title mb-2">Accounting / Finance</h4>
-                                <span class="font-weight-medium">(3 open positions)</span>
                             </div>
                         </a>
-                    </div><!-- end category-item -->
+                    </div>
                 </div>
                 <div class="col-lg-3 responsive-column">
                     <div class="category-item">
@@ -358,7 +359,6 @@
                             </div>
                             <div class="cat-content">
                                 <h4 class="cat__title mb-2">Telecommunications</h4>
-                                <span class="font-weight-medium">(21 open positions)</span>
                             </div>
                         </a>
                     </div>
@@ -371,10 +371,57 @@
                             </div>
                             <div class="cat-content">
                                 <h4 class="cat__title mb-2">Construction</h4>
-                                <span class="font-weight-medium">(11 open positions)</span>
                             </div>
                         </a>
-                    </div><!-- end category-item -->
+                    </div>
+                </div>
+                <div class="col-lg-3 responsive-column">
+                    <div class="category-item">
+                        <a href="job-grid-view.html" class="cat-fig-box d-block p-4">
+                            <div class="icon-element mb-3">
+                                <i class="fa fa-paint-brush"></i>
+                            </div>
+                            <div class="cat-content">
+                                <h4 class="cat__title mb-2">Design & Multimedia</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 responsive-column">
+                    <div class="category-item">
+                        <a href="job-grid-view.html" class="cat-fig-box d-block p-4">
+                            <div class="icon-element mb-3">
+                                <i class="fa fa-chart-line"></i>
+                            </div>
+                            <div class="cat-content">
+                                <h4 class="cat__title mb-2">Accounting / Finance</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 responsive-column">
+                    <div class="category-item">
+                        <a href="job-grid-view.html" class="cat-fig-box d-block p-4">
+                            <div class="icon-element mb-3">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="cat-content">
+                                <h4 class="cat__title mb-2">Telecommunications</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 responsive-column">
+                    <div class="category-item">
+                        <a href="job-grid-view.html" class="cat-fig-box d-block p-4">
+                            <div class="icon-element mb-3">
+                                <i class="fa fa-hammer"></i>
+                            </div>
+                            <div class="cat-content">
+                                <h4 class="cat__title mb-2">Construction</h4>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -386,17 +433,16 @@
                 <div class="col-lg-9">
                     <div class="section-heading">
                         <h2 class="sec__title mb-2 font-size-26 line-height-35">
-                            Avoir des connaissances c'est bien ! <br>
-                            Les partager avec les autres, c'est mieux !
+                            {!! __('index.create_a_trainer_account_text') !!}
                         </h2>
                         <p class="sec__desc__">
-                            Gagnez un revenu complémentaire en partageant vos connaissances.
+                            {{ __('index.create_a_trainer_account_sub_text') }}
                         </p>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="btn-box">
-                        <a href="contact.html" class="theme-btn">Je deviens formateur</a>
+                        <a href="" class="theme-btn">{{ __('index.create_a_trainer_account_btn') }}</a>
                     </div>
                 </div>
             </div>

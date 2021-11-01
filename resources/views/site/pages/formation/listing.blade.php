@@ -2,25 +2,12 @@
 
 @section('content')
 
-    <section class="hero-wrapper hero-wrapper-1" style="background-image:url('{{ asset('assets/img/bg/index-2.jpg') }}')">
+    <section class="hero-wrapper-1" style="background-image:url('{{ asset('assets/img/bg/index-2.jpg') }}')">
         <div class="hero-overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="hero-content-wrapper position-relative">
-                    <div class="hero-heading text-center">
-                            <div class="section-heading">
-                                <p class="sec__desc font-size-50 font-weight-medium cd-headline zoom">
-                                    <span class="cd-words-wrapper">
-                                        <b class="is-visible">Apprendre</b>
-                                        <b>Partager</b>
-                                        <b>Booster</b>
-                                        <b>Rencontrer</b>
-                                        <b>Evoluer</b>
-                                    </span>
-                                </p>
-                            </div>
-                        </div>
                         <div class="hero-form-wrap position-absolute shadow">
                             <div class="main-search-input">
                                 <div class="main-search-input-item">
@@ -36,15 +23,19 @@
                                 <div class="main-search-input-item user-chosen-select-container">
                                     <select class="user-chosen-select">
                                         <option value="1">{{ __('index.search_categories_placeholder') }}</option>
-                                        <option value="2">Accountancy</option>
-                                        <option value="3">Banking</option>
-                                        <option value="4">Digital & Creative</option>
-                                        <option value="5">Charity & Voluntary</option>
-                                        <option value="6">Delivery Driver Jobs</option>
-                                        <option value="7">Leisure & Tourism jobs</option>
-                                        <option value="8">Graphic Designer Jobs</option>
-                                        <option value="9">IT Contractor</option>
-                                        <option value="10">Graduate</option>
+                                        <optgroup label="Cat 1">
+                                            <option value="2">Accountancy</option>
+                                            <option value="3">Banking</option>
+                                        </optgroup>
+                                        <optgroup label="Cat 2">
+                                            <option value="4">Digital & Creative</option>
+                                            <option value="5">Charity & Voluntary</option>
+                                            <option value="6">Delivery Driver Jobs</option>
+                                            <option value="7">Leisure & Tourism jobs</option>
+                                            <option value="8">Graphic Designer Jobs</option>
+                                            <option value="9">IT Contractor</option>
+                                            <option value="10">Graduate</option>
+                                        </optgroup>
                                         <option value="11">Manufacturing jobs</option>
                                         <option value="12">Marketing & PR</option>
                                         <option value="13">Media</option>
@@ -308,11 +299,176 @@
                             </div>
                             <div class="col-lg-12 mx-auto mt-4">
                                 <ul class="list-items job-tags d-flex flex-wrap justify-content-center">
-                                    <li><a href="job-grid-view.html">Type</a></li>
-                                    <li><a href="job-grid-view.html">Dates</a></li>
-                                    <li><a href="job-grid-view.html">Prix</a></li>
-                                    <li><a href="job-grid-view.html">Places disponibles</a></li>
-                                    <li><a href="job-grid-view.html">Certification</a></li>
+                                    <li class="dropdown filter-dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle filter-dropdown-link" id="filter-course-type-btn" data-target-title="{{ __('navigation.filter_by_type_text') }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            {{ __('navigation.filter_by_type_text') }}
+                                        </a>
+                                        <div class="dropdown-menu stop-propagation position-absolute" aria-labelledby="filter-course-type-btn">
+                                            <div class="">
+                                                <div class="n-chk">
+                                                    <label class="new-control new-checkbox new-checkbox checkbox-primary">
+                                                    <input type="checkbox" class="new-control-input filter-course-type" name="course_online" 
+                                                    data-title="{{ __('navigation.course_online_text') }}" />
+                                                    <span class="new-control-indicator"></span> 
+                                                    {{ __('navigation.course_online_text') }}
+                                                    </label>
+                                                </div>
+                                                <div class="n-chk">
+                                                    <label class="new-control new-checkbox new-checkbox checkbox-primary">
+                                                    <input type="checkbox" class="new-control-input filter-course-type" name="course_face_to_face" 
+                                                    data-title="{{ __('navigation.course_face_to_face_text') }}" />
+                                                    <span class="new-control-indicator"></span> 
+                                                    {{ __('navigation.course_face_to_face_text') }}
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="d-flex flex-row justify-content-between pt-2">
+                                                <button class="btn-custom-light color-text-3 bg-white btn-clear-filter" data-target="course_type">
+                                                    {{ __('navigation.filter_action_btn_clear') }}
+                                                </button>
+                                                <button class="btn-custom-light color-text bg-white btn-apply-filter" data-target="course_type">
+                                                    {{ __('navigation.filter_action_btn_save') }}
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown filter-dropdown">
+                                        <a href="javascript:void(0);" data-display="static" class="dropdown-toggle filter-dropdown-link" id="filter2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            {{ __('navigation.filter_by_dates_text') }}
+                                        </a>
+                                        <div class="dropdown-menu stop-propagation position-absolute width-500px" aria-labelledby="filter2">
+                                            <div class="">
+                                                <input type="hidden" class="daterangepicker" id="filter-dates" />
+                                                <div class="daterangepicker-content"></div>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="d-flex flex-row justify-content-between pt-2">
+                                                <button class="btn-custom-light color-text-3 bg-white">
+                                                        {{ __('navigation.filter_action_btn_clear') }}
+                                                </button>
+                                                <button class="btn-custom-light color-text bg-white">
+                                                        {{ __('navigation.filter_action_btn_save') }}
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown filter-dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle filter-dropdown-link" id="filter-course-price-btn" data-target-title="{{ __('navigation.filter_by_price_text') }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            {{ __('navigation.filter_by_price_text') }}
+                                        </a>
+                                        <div class="dropdown-menu stop-propagation position-absolute width-300px" aria-labelledby="filter-course-price-btn">
+                                            <div class="">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label for="">
+                                                            {{  __('navigation.filter_min_price_text') }}
+                                                        </label>
+                                                        <input type="text" class="form-control filter-course-price" id="min" name="" value="" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"  />
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="">
+                                                            {{ __('navigation.filter_max_price_text') }}
+                                                        </label>
+                                                        <input type="text" class="form-control filter-course-price" id="max" name="" value="" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"  />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="d-flex flex-row justify-content-between pt-2">
+                                                <button class="btn-custom-light color-text-3 bg-white">
+                                                    {{ __('navigation.filter_action_btn_clear') }}
+                                                </button>
+                                                <button class="btn-custom-light color-text bg-white">
+                                                    {{ __('navigation.filter_action_btn_save') }}
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown filter-dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle filter-dropdown-link" id="filter4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            {{ __('navigation.filter_by_availables_seats_text') }}
+                                        </a>
+                                        <div class="dropdown-menu stop-propagation position-absolute width-275px" aria-labelledby="filter4">
+                                            <div class="">
+                                                <div class="d-flex flex-row justify-content-between">
+                                                    <button class="btn-fil-nb btn-custom-light btn-custom-2 mb-2">
+                                                        1
+                                                    </button>
+                                                    <button class="btn-fil-nb btn-custom-light btn-custom-2 mb-2">
+                                                        2
+                                                    </button>
+                                                    <button class="btn-fil-nb btn-custom-light btn-custom-2 mb-2">
+                                                        3
+                                                    </button>
+                                                    <button class="btn-fil-nb btn-custom-light btn-custom-2 mb-2">
+                                                        4
+                                                    </button>
+                                                    <button class="btn-fil-nb btn-custom-light btn-custom-2 mb-2">
+                                                        5
+                                                    </button>
+                                                </div>
+                                                <div class="d-flex flex-row justify-content-between">
+                                                    <button class="btn-fil-nb active btn-custom-light btn-custom-2 mb-2">
+                                                        6
+                                                    </button>
+                                                    <button class="btn-fil-nb btn-custom-light btn-custom-2 mb-2">
+                                                        7
+                                                    </button>
+                                                    <button class="btn-fil-nb btn-custom-light btn-custom-2 mb-2">
+                                                        8
+                                                    </button>
+                                                    <button class="btn-fil-nb btn-custom-light btn-custom-2 mb-2">
+                                                        9
+                                                    </button>
+                                                    <button class="btn-fil-nb btn-custom-light btn-custom-2 mb-2">
+                                                        10+
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="d-flex flex-row justify-content-between pt-2">
+                                                <button class="btn-custom-light color-text-3 bg-white">
+                                                    {{ __('navigation.filter_action_btn_clear') }}
+                                                </button>
+                                                <button class="btn-custom-light color-text bg-white">
+                                                    {{ __('navigation.filter_action_btn_save') }}
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown filter-dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle filter-dropdown-link" id="filter5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            {{ __('navigation.filter_by_certification_text') }}
+                                        </a>
+                                        <div class="dropdown-menu stop-propagation position-absolute" aria-labelledby="filter5">
+                                            <div class="">
+                                                <div class="n-chk">
+                                                    <label class="new-control new-checkbox new-checkbox-rounded checkbox-success">
+                                                    <input type="radio" class="new-control-input">
+                                                    <span class="new-control-indicator"></span> 
+                                                    {{ __('navigation.filter_certified_yes_text') }}
+                                                    </label>
+                                                </div>
+                                                <div class="n-chk">
+                                                    <label class="new-control new-checkbox new-checkbox-rounded checkbox-danger">
+                                                    <input type="radio" class="new-control-input">
+                                                    <span class="new-control-indicator"></span> 
+                                                    {{ __('navigation.filter_certified_no_text') }}
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="d-flex flex-row justify-content-between pt-2">
+                                                    <button class="btn-custom-light color-text-3 bg-white">
+                                                        {{ __('navigation.filter_action_btn_clear') }}
+                                                    </button>
+                                                    <button class="btn-custom-light color-text bg-white">
+                                                        {{ __('navigation.filter_action_btn_save') }}
+                                                    </button>
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -324,16 +480,23 @@
 
     <section class="card-area padding-top-100px padding-bottom-100px">
         <div class="container">
+            <!-- 
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="generic-header margin-bottom-30px">
-                        <p class="showing__text text-left">Annonces correspondantes : 3</p>
+                <div class="calendar"></div>
+                </div>
+            </div>
+            -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="margin-bottom-30px">
+                        <p class="showing__text text-left"></p>
                         <div class="sort-option user-chosen-select-container mr-3">
                             <select class="user-chosen-select">
-                                <option value="default">Tri : Plus récentes</option>
-                                <option value="newest">Tri : Plus anciennes</option>
-                                <option value="price-low-to-high">Tri : Prix croissants</option>
-                                <option value="price-high-to-low">Tri : Prix décroissants</option>
+                                <option value="">{{ __('navigation.sort_by_newest') }}</option>
+                                <option value="">{{ __('navigation.sort_by_oldest') }}</option>
+                                <option value="">{{ __('navigation.sort_by_price_high_to_low') }}</option>
+                                <option value="">{{ __('navigation.sort_by_price_low_to_high') }}</option>
                             </select>
                         </div>
                     </div>

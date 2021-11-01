@@ -10,7 +10,11 @@
                     <div class="billing-form-item mb-0">
                         <div class="billing-title-wrap border-bottom-0 text-center">
                             <h3 class="widget-title font-size-28 pb-2">
-                                <img src="{{asset('assets/img/logo/logo_og_footer.png')}}" width="150px" alt="logo"> | {{ __('auth.login_text') }}
+                                <a href="/">
+                                    <img src="{{asset('assets/img/logo/logo_og_footer.png')}}" width="150px" alt="logo">
+                                </a> 
+                                | 
+                                <span class="">{{ __('auth.login_text') }}</span>
                             </h3>
                             <p>{{ __('auth.login_sub_text') }}</p>
                         </div>
@@ -70,7 +74,7 @@
                                         <div class="col-lg-6">
                                             <div class="form-group">
                                                     <div class=" text-lg-right text-left">
-                                                        <a href="/mot-de-passe-oublie" class="color-text">
+                                                        <a href="{{ route('forgot') }}" class="color-text">
                                                             {{ __('auth.password_forgot_text') }}
                                                         </a>
                                                     </div>

@@ -37,10 +37,10 @@
                                     </a>
                                 </li>
                             </ul>
-                        </div><!-- end logo -->
-                    </div><!-- end footer-item -->
-                </div><!-- end col-lg-4 -->
-                <div class="col-lg-2 responsive-column">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 responsive-column">
                     <div class="footer-item">
                         <h4 class="footer__title">General</h4>
                         <ul class="list-items">
@@ -52,8 +52,8 @@
                             <li><a href="#">Careers</a></li>
                         </ul>
                     </div><!-- end footer-item -->
-                </div><!-- end col-lg-2 -->
-                <div class="col-lg-2 responsive-column">
+                </div>
+                <div class="col-lg-3 responsive-column">
                     <div class="footer-item">
                         <h4 class="footer__title">Job Seekers</h4>
                         <ul class="list-items">
@@ -65,34 +65,17 @@
                             <li><a href="#">Site map</a></li>
                         </ul>
                     </div><!-- end footer-item -->
-                </div><!-- end col-lg-2 -->
+                </div>
                 <div class="col-lg-2 responsive-column">
                     <div class="footer-item">
-                        <h4 class="footer__title">Employers</h4>
-                        <ul class="list-items">
-                            <li><a href="#">Get a Free Employer</a></li>
-                            <li><a href="#">Account</a></li>
-                            <li><a href="#">Employer Center</a></li>
-                            <li><a href="#">Post a Job</a></li>
-                            <li><a href="#">Recruiting Solutions</a></li>
-                            <li><a href="#">Screening</a></li>
-                        </ul>
-                    </div><!-- end footer-item -->
-                </div><!-- end col-lg-2 -->
-                <div class="col-lg-2 responsive-column">
-                    <div class="footer-item">
-                        <h4 class="footer__title">Helpful Links</h4>
-                        <ul class="list-items">
-                            <li><a href="#">Help / Contact Us</a></li>
-                            <li><a href="#">Terms of Use</a></li>
-                            <li><a href="#">Privacy Center</a></li>
-                            <li><a href="#">Security Center</a></li>
-                            <li><a href="#">Do Not Sell</a></li>
-                            <li><a href="#">AdChoices</a></li>
-                        </ul>
-                    </div><!-- end footer-item -->
-                </div><!-- end col-lg-2 -->
-            </div><!-- end row -->
+                        <h4 class="footer__title">Langues</h4>
+                        <select name="" id="">
+                            <option value="">français</option>
+                            <option value="">english</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="copy-right margin-top-50px padding-top-30px">

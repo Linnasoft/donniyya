@@ -32,7 +32,9 @@
                             <span class="fa fa-check icon-element"></span>
                         </div>
                         <div class="mb-3">
-                            <img alt="logo" src="{{asset('assets/img/logo/logo_og_footer.png')}}" width="200px" class=" mb-3">
+                            <a href="/">
+                                <img alt="logo" src="{{asset('assets/img/logo/logo_og_footer.png')}}" width="200px" class=" mb-3">
+                            </a>
                         </div>
                         <div class="toggler m-0">
                             <span class="badge">{{ __('auth.password_reset_text') }}</span>

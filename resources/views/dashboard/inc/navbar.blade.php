@@ -153,7 +153,7 @@
                                     {{ __('navigation.dashboard_navbar_item_2_text') }}
                                 </a>
                                 <a href="{{ route('notifications') }}" class="d-block">
-                                    <i class="fas fa-bell"></i> 
+                                    <i class="far fa-bell"></i> 
                                     {{ __('navigation.dashboard_navbar_item_3_text') }}
                                 </a>
                                 <div class="section-block mt-2 mb-2"></div>

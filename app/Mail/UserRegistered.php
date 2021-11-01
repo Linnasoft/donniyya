@@ -14,25 +14,24 @@ class UserRegistered extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $comp;
     public $firstname;
-    public $lastname;
-    public $password;
-    public $invoice;
+    public $email;
     
-    public function __construct($firstname)
+    public function __construct($firstname, $email)
     {
         $this->firstname = $firstname;
+        $this->email = $email;
     }
 
     public function build()
     {
         $data = [
-            'firstname' => $this->firstname
+            'firstname' => $this->firstname,
+            'email' => $this->email
         ];
     
         return $this->from(config('mail.from.address'), config('app.name'))
-                    ->subject('Création de votre compte '.config('app.name'))
+                    ->subject(__('auth.user_registered_mail_title'))
                     ->markdown('base_emails.user_registered')
                     ->with($data);
     }

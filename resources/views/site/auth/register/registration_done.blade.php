@@ -32,20 +32,22 @@
                             <span class="fa fa-check icon-element"></span>
                         </div>
                         <div class="mb-3">
-                            <img alt="logo" src="{{asset('assets/img/logo/logo_og_footer.png')}}" width="200px" class=" mb-3">
+                            <a href="/">
+                                <img alt="logo" src="{{asset('assets/img/logo/logo_og_footer.png')}}" width="200px" class=" mb-3">
+                            </a>
                         </div>
                         <div class="toggler m-0">
-                            <span class="badge">Votre compte a été créé avec succès !</span>
+                            <span class="badge">{{ __('auth.registration_done_confirm_text') }}</span>
                         </div>
                         <div class="section-heading pt-3">
                             <h2 class="sec__title pt-0 mb-2 before-none font-size-15 line-height-22 font-weight-regular">
-                                Une confirmation vous a été envoyée à l'adresse : <br>
+                                {{ __('auth.registration_done_confirm_sub_text') }} <br>
                                 <b>{{ $email }}</b>
                             </h2>
-                            <p class="sec__desc__">à Bientôt</p>
+                            <p class="sec__desc__">{{ __('auth.see_u_soon_text') }}</p>
                         </div>
                         <div class="btn-box padding-top-30px">
-                            <a href="" class="theme-btn">Se connecter</a>
+                            <a href="" class="theme-btn">{{ __('auth.login_btn_text') }}</a>
                         </div>
                     </div>
                 </div>

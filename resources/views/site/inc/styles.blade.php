@@ -12,6 +12,9 @@
 <link rel="stylesheet" href="{{ asset('assets/css/site/theme-checkbox-radio.css') }}" />
 <link rel="stylesheet" href="{{ asset('assets/css/site/avatar.css') }}" />
 <link href="{{asset('plugins/notification/snackbar/snackbar.min.css')}}" rel="stylesheet" type="text/css" />
+
+<link href="{{asset('plugins/jquery-date-range-picker/dist/daterangepicker.css')}}" rel="stylesheet" type="text/css" />
+
 <link rel="stylesheet" href="{{ asset('assets/css/site/style.css') }}" />
 
 <link rel="stylesheet" href="{{asset('plugins/font-icons/fontawesome/css/fontawesome.css')}}">

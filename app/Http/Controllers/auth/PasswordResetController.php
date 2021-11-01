@@ -49,17 +49,17 @@ class PasswordResetController extends Controller
                 }
                 else
                 {
-                    return back()->with('status','Adresse mail introuvable !')->withInput();
+                    return back()->with('status', __('auth.resetpassword_error_email_no_exists'))->withInput();
                 }
             }
             else
             {
-                return back()->with('status','Adresse mail invalide !')->withInput();
+                return back()->with('status', __('auth.resetpassword_error_invalid_email'))->withInput();
             }
         }
         else
         {
-            return back()->with('status','Renseignez l\'adresse mail associée à votre compte !')->withInput();
+            return back()->with('status', __('auth.resetpassword_error_no_credential'))->withInput();
         }
     }
 

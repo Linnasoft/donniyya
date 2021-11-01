@@ -63,32 +63,32 @@ class RegisterController extends Controller
                         $user->token = $token;
                         $user->save();
 
-                        /*Mail::to($request->email)
+                        Mail::to($request->email)
                         ->send(
-                            new UserRegistered($request->firstname)
-                        );*/
+                            new UserRegistered($request->firstname, $request->email)
+                        );
 
                         return view('site.auth.register.registration_done')->with('email', $request->email);
                     }
                     else
                     {
-                        return back()->with('status', 'Le mot de passe et la confirmation ne correspondent pas!')
+                        return back()->with('status', __('auth.register_error_password_confirmation_no_match'))
                         ->withInput();
                     }
                 }
                 else
                 {
-                    return back()->with('status', 'Cette adresse mail est associée à un compte existant !')->withInput();
+                    return back()->with('status', __('auth.register_error_email_exists'))->withInput();
                 }
             }
             else
             {
-                return back()->with('status', 'L\'adresse mail est invalide !')->withInput();
+                return back()->with('status', __('auth.register_error_invalid_email'))->withInput();
             }
         }
         else
         {
-            return back()->with('status', 'Tous les champs sont requis !')->withInput();
+            return back()->with('status', __('auth.register_error_no_credential'))->withInput();
         }
     }
 

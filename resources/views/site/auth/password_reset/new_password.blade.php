@@ -31,7 +31,11 @@
                         <div class="billing-form-item mb-0">
                             <div class="billing-title-wrap border-bottom-0 text-center">
                                 <h3 class="widget-title font-size-28 pb-2">
-                                    <img src="{{asset('assets/img/logo/logo_og_footer.png')}}" width="150px" alt="logo"> | {{ __('auth.new_password_text') }}
+                                    <a href="/">
+                                        <img src="{{asset('assets/img/logo/logo_og_footer.png')}}" width="150px" alt="logo">
+                                    </a> 
+                                    | 
+                                    <span>{{ __('auth.new_password_text') }}</span>
                                 </h3>
                             </div>
                             <div class="billing-content">
